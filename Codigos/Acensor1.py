@@ -29,6 +29,6 @@ elif opcion < piso:  # Si el piso seleccionado es menor que el actual, el ascens
 else:
     print("Ya esta en el Piso", piso)  # Si el usuario selecciona el piso actual
 
-# Al final, actualizar el piso del ascensor al destino elegido
+# Al final, actualizar el piso del ascensor al destino elegido 1
 piso = opcion
 print("Usted ha llegado al Piso:", piso)  # Mostrar el piso final
