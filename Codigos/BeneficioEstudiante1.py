@@ -21,21 +21,16 @@ try:
 
     # Reglas para el descuento en arancel
     if promedio > 6.0:
-        if quintil == 1 or quintil == 2:
-            descuento_arancel = 0.20
-        elif quintil == 3 or quintil == 4:
-            descuento_arancel = 0.15
+        descuento_arancel = 0.20 if quintil in [1, 2] else 0.15 if quintil in [3, 4] else 0.0
     elif promedio > 5.0:
-        if quintil == 1 or quintil == 2:
-            descuento_arancel = 0.13
-        elif quintil == 3 or quintil == 4:
-            descuento_arancel = 0.10
+        descuento_arancel = 0.13 if quintil in [1, 2] else 0.10 if quintil in [3, 4] else 0.0
+    else:
+        descuento_arancel = 0.0
 
     # Reglas para el descuento en matrícula
-    if quintil == 1 or quintil == 2 or quintil == 3:
-        descuento_matricula = 0.10
-        if promedio >= 5.5:
-            descuento_matricula += 0.05
+    descuento_matricula = 0.10 if quintil in [1, 2, 3] else 0.0
+    if promedio >= 5.5 and descuento_matricula > 0:
+        descuento_matricula += 0.05
 
     # Cálculo de totales
     total_arancel = arancel * (1 - descuento_arancel)

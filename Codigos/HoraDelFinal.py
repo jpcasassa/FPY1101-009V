@@ -14,4 +14,3 @@ hour = hour % 24
 
 # Mostrar el resultado
 print(f"El evento termina a las {hour:02}:{mins:02}")
-1/1
