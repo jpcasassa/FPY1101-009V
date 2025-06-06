@@ -1,2 +1,5 @@
-for i in range(1, 5, 2): 
- print(i) 
+
+def sumar (a+b):
+    return a + b , a, b
+sumar (2,170)
+resultado, num1, num2 = sumar 

@@ -1,7 +1,7 @@
 # Declaramos las listas vacías para cada fila
 fila1 = []   # Lado izquierdo - asiento A
 fila2 = []   # Lado izquierdo - asiento B
-fila3 = []   # Lado derecho - asiento C
+fila3 = []   # Lado derecho - asiento C 
 fila4 = []   # Lado derecho - asiento D
 
 # Bucle para llenar cada lista con 40 asientos
